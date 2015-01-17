@@ -40,10 +40,15 @@
             this.AsyncUsingFuncProgressBar = new System.Windows.Forms.ProgressBar();
             this.AsyncUsingFuncStartButton = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.AsyncCancelCancelButton = new System.Windows.Forms.Button();
+            this.AsyncCancelProgressBar = new System.Windows.Forms.ProgressBar();
+            this.AsyncCancelStartButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -162,11 +167,52 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Asynchronous Using Func";
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.AsyncCancelCancelButton);
+            this.groupBox5.Controls.Add(this.AsyncCancelProgressBar);
+            this.groupBox5.Controls.Add(this.AsyncCancelStartButton);
+            this.groupBox5.Location = new System.Drawing.Point(12, 195);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(197, 90);
+            this.groupBox5.TabIndex = 9;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Asynchronous Cancel";
+            // 
+            // AsyncCancelCancelButton
+            // 
+            this.AsyncCancelCancelButton.Location = new System.Drawing.Point(113, 61);
+            this.AsyncCancelCancelButton.Name = "AsyncCancelCancelButton";
+            this.AsyncCancelCancelButton.Size = new System.Drawing.Size(75, 23);
+            this.AsyncCancelCancelButton.TabIndex = 6;
+            this.AsyncCancelCancelButton.Text = "Cancel";
+            this.AsyncCancelCancelButton.UseVisualStyleBackColor = true;
+            this.AsyncCancelCancelButton.Click += new System.EventHandler(this.AsyncCancelCancelButton_Click);
+            // 
+            // AsyncCancelProgressBar
+            // 
+            this.AsyncCancelProgressBar.Location = new System.Drawing.Point(6, 32);
+            this.AsyncCancelProgressBar.Maximum = 2000;
+            this.AsyncCancelProgressBar.Name = "AsyncCancelProgressBar";
+            this.AsyncCancelProgressBar.Size = new System.Drawing.Size(182, 23);
+            this.AsyncCancelProgressBar.TabIndex = 5;
+            // 
+            // AsyncCancelStartButton
+            // 
+            this.AsyncCancelStartButton.Location = new System.Drawing.Point(6, 61);
+            this.AsyncCancelStartButton.Name = "AsyncCancelStartButton";
+            this.AsyncCancelStartButton.Size = new System.Drawing.Size(75, 23);
+            this.AsyncCancelStartButton.TabIndex = 3;
+            this.AsyncCancelStartButton.Text = "Start";
+            this.AsyncCancelStartButton.UseVisualStyleBackColor = true;
+            this.AsyncCancelStartButton.Click += new System.EventHandler(this.AsyncCancelStartButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 360);
+            this.ClientSize = new System.Drawing.Size(477, 360);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -177,6 +223,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -195,6 +242,10 @@
         private System.Windows.Forms.ProgressBar AsyncUsingFuncProgressBar;
         private System.Windows.Forms.Button AsyncUsingFuncStartButton;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.ProgressBar AsyncCancelProgressBar;
+        private System.Windows.Forms.Button AsyncCancelStartButton;
+        private System.Windows.Forms.Button AsyncCancelCancelButton;
 
     }
 }

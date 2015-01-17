@@ -130,6 +130,40 @@ namespace DotNet4
 
         #endregion
 
+        #region Async Cancel
+
+        CancellationTokenSource cancelTokenSource = new CancellationTokenSource();
+
+        private async void AsyncCancelStartButton_Click(object sender, EventArgs e)
+        {
+            int value = await CountToValueAsync(cancelTokenSource.Token);
+            AsyncCancelProgressBar.Value = value;
+            cancelTokenSource = new CancellationTokenSource();
+        }
+
+        private void AsyncCancelCancelButton_Click(object sender, EventArgs e)
+        {
+            cancelTokenSource.Cancel();
+        }
+
+        private async Task<int> CountToValueAsync(CancellationToken token)
+        {
+            int value = 0;
+            for (value = 0; value < AsyncCancelProgressBar.Maximum; value++)
+            {
+                if (token.IsCancellationRequested)
+                {
+                    return value;
+                }
+
+                await Task.Delay(1);
+            }
+
+            return value;
+        }
+
+        #endregion
+
         #region Cross Thread Violations
 
         // Creating a new Task and making it run a method that acesses the UI will cause a cross-thread exception
