@@ -1,0 +1,32 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ComputePrimes/ParallelPrimeRangeComputer.cs">
+    <Files>
+      <File FileName="ComputePrimes/ComputePrimes.cs" Line="1" Column="1" />
+      <File FileName="ComputePrimes/IPrimeRangeComputer.cs" Line="1" Column="1" />
+      <File FileName="ComputePrimes/PrimeRangeComputer.cs" Line="1" Column="1" />
+      <File FileName="ComputePrimes/ParallelPrimeRangeComputer.cs" Line="18" Column="13" />
+      <File FileName="ComputePrimes/Helpers.cs" Line="1" Column="1" />
+      <File FileName="ComputePrimesRunner/Program.cs" Line="1" Column="1" />
+      <File FileName="ComputePrimes/PrimeRangeResult.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.CustomExecutionModes>
+    <Data Name="Profiling Args" Id="8ad3ce42-20d9-4e96-a857-a51f0731eac1" ModeId="Default">
+      <CommandData>
+        <Item Key="MonoDevelop.Ide.Execution.CustomArgsCustomizer">
+          <Value Arguments="1 100 2 2000 5325265 5328005 20630 3049635 234 240205 882 20202025" ctype="CustomArgsExecutionModeData">
+            <EnvironmentVariables />
+          </Value>
+        </Item>
+        <Item Key="MonoDevelop.Ide.Execution.MonoExecutionCustomizer">
+          <Value ctype="MonoExecutionParameters" />
+        </Item>
+      </CommandData>
+    </Data>
+  </MonoDevelop.Ide.CustomExecutionModes>
+</Properties>
